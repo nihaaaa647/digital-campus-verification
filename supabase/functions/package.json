@@ -1,0 +1,21 @@
+{
+  "name": "dcid-functions",
+  "private": true,
+  "type": "module",
+  "description": "Local test harness and dev runner for the Edge Functions. The functions themselves run on Deno and resolve imports through deno.json; Node runs their shared code in tests, with PGlite as the database.",
+  "scripts": {
+    "test": "node --test _shared/credential.test.ts _shared/scanner_sync.test.ts _shared/pg_sync_store.test.ts _shared/postgres_js_adapter.test.ts _shared/scanner_activate.test.ts _shared/pg_activate.test.ts _shared/student_flow.test.ts _shared/admin.test.ts dev/test_pass.test.ts dev/admin_auth.test.ts",
+    "dev:scanner-sync": "node dev/serve.ts",
+    "dev:server": "node dev/serve.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "1.9.7",
+    "@noble/hashes": "1.8.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.12",
+    "@electric-sql/pglite-socket": "^0.2.15",
+    "postgres": "^3.4.9",
+    "qrcode": "^1.5.4"
+  }
+}

@@ -1,0 +1,48 @@
+# Minimal Supabase CLI config, written by hand and not yet run through the CLI.
+# If `supabase start` complains about a key, run `supabase init` in a scratch folder
+# and copy over the values that differ.
+
+project_id = "digital-campus-id"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+major_version = 17
+
+# Development data (a sample student, the dev scanner and guard). Never use it on a real project.
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3000"
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+otp_length = 6
+otp_expiry = 600
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+# Only roster emails may sign up (S1). The function lives in the first migration.
+[auth.hook.before_user_created]
+enabled = true
+uri = "pg-functions://postgres/public/hook_before_user_created"
+
+[functions.issue-credential]
+verify_jwt = true
+
+# Scanners authenticate with their own token, not a Supabase user JWT.
+[functions.scanner-activate]
+verify_jwt = false
+
+[functions.scanner-sync]
+verify_jwt = false

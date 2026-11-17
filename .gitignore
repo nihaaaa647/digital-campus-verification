@@ -1,0 +1,36 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+*.iml
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+*.jks
+*.keystore
+
+# Node
+node_modules/
+
+# Supabase local state and secrets
+supabase/.branches/
+supabase/.temp/
+supabase/functions/.env
+supabase/.env*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local demo server data (supabase/functions/dev/serve.ts)
+supabase/.dev-data/
+supabase/.dev-data-backup*/

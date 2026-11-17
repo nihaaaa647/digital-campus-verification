@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@noble/curves/p256": "npm:@noble/curves@1.9.7/p256",
+    "@noble/hashes/sha256": "npm:@noble/hashes@1.8.0/sha256",
+    "@noble/hashes/utils": "npm:@noble/hashes@1.8.0/utils",
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2",
+    "postgres": "npm:postgres@3.4.9"
+  }
+}

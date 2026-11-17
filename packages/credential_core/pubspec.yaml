@@ -1,0 +1,14 @@
+name: credential_core
+description: Digital Campus ID credential and QR format v1. Shared by the student app and the guard scanner.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  pointycastle: ^3.9.1
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0

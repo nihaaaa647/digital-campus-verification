@@ -1,0 +1,9 @@
+name: digital_campus_id_workspace
+description: Dart workspace root. Members share one dependency resolution and one pubspec.lock.
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+
+workspace:
+  - packages/credential_core

@@ -1,0 +1,17 @@
+name: campus_ui
+description: Shared look for the Digital Campus ID apps (theme, colours and a few small widgets).
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0

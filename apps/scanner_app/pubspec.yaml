@@ -1,0 +1,30 @@
+name: scanner_app
+description: Digital Campus ID guard scanner. Verifies QR passes offline and logs every exit.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  credential_core:
+    path: ../../packages/credential_core
+  mobile_scanner: ^7.4.2
+  sqlite3: ^3.8.0
+  path_provider: ^2.1.6
+  campus_ui:
+    path: ../../packages/campus_ui
+  http: ^1.6.0
+  flutter_secure_storage: ^9.2.4
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/keys/dev-keyset.json

@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "current": 2,
+  "keys": [
+    {
+      "kv": 1,
+      "alg": "ES256",
+      "pub": "Ah4-507MElKR9T9-Uj_W86YfS0e7KB0fI4OGrw9-ZXf9"
+    },
+    {
+      "kv": 2,
+      "alg": "ES256",
+      "pub": "Arf2T6rVyC1iymOvnNc9yRz5PBxxtKf5ypfs0Outfdyw"
+    }
+  ]
+}
